@@ -60,18 +60,59 @@ body {
   border: 1px solid grey;
   padding: 5px 10px;
   background-color: lightseagreen;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
 }
-.save-button:hover {
-  background-color: green;
-  color: white;
+
+.edit-button {
+  position: absolute;
+  top: 60px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.delete-button {
+  position: absolute;
+  top: 95px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: red;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.save-button:hover,
+.edit-button:hover,
+.delete-button:hover {
+  box-shadow: 0 0 3px #bbb;
+  opacity: 0.9;
 }
 
 .home-button {
   padding: 5px 10px;
+  margin: 0 5px;
   background-color: lightskyblue;
 }
 
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
 }

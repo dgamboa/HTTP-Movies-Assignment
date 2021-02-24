@@ -43,6 +43,20 @@ export default function UpdateForm(props) {
   
   const handleMovieUpdate = (e) => {
     e.preventDefault();
+    axios.put(`http://localhost:5000/api/movies/${id}`, formValues)
+      .then(res => {
+        const updatedMovieList = props.movieList.filter(movie => {
+          return movie.id !== res.data.id
+        });
+        props.setMovieList([
+          ...updatedMovieList,
+          res.data
+        ]);
+        props.history.push(`/movies/${id}`);
+      })
+      .catch(err => {
+        console.log(err);
+      })
   };
 
   return (

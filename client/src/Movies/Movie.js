@@ -23,6 +23,10 @@ function Movie({ addToSavedList }) {
     history.push(`/update-movie/${movie.id}`)
   };
 
+  const deleteMovie = () => {
+
+  };
+
   useEffect(() => {
     fetchMovie(params.id);
   }, [params.id]);
@@ -40,6 +44,9 @@ function Movie({ addToSavedList }) {
       </div>
       <div className="edit-button" onClick={editMovie}>
         Edit
+      </div>
+      <div className="delete-button" onClick={deleteMovie}>
+        Delete
       </div>
     </div>
   );

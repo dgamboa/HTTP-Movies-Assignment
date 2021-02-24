@@ -60,9 +60,9 @@ Movie object format:
 
 ### Task 3: Stretch Problem
 
-- Add the ability to update the stars of a movie within a single text input field (think about how to change from an array of strings to a single string, then back to an array of strings)
-- See Part 3 above (Adding movies with a POST request)
+- [x] Add the ability to update the stars of a movie within a single text input field (think about how to change from an array of strings to a single string, then back to an array of strings)
+- [x] See Part 3 above (Adding movies with a POST request)
 - Style the app!
 
 ## Submission Format
-* [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
+* [x] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**

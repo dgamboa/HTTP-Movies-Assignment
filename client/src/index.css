@@ -98,10 +98,21 @@ body {
 
 .home-button {
   padding: 5px 10px;
+  margin: 0 5px;
   background-color: lightskyblue;
 }
 
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
 }
